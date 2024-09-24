@@ -13,13 +13,17 @@ const addMoneyInNumber = parseFloat(addMoneyValue);
 const balance = donateBalance.innerText;
 const balanceInNumber = parseFloat(balance);
 
+const mainBalance = myBalance.innerText;
+const mainBalanceInNumber = parseFloat(mainBalance);
 
 if(addMoneyInNumber <= 0){
   alert('Please input a valid amount')
 }
 else{
   const newBalance = balanceInNumber + addMoneyInNumber;
+  const mainNewBalance = mainBalanceInNumber - addMoneyValue;
   donateBalance.innerText = newBalance;
+  myBalance.innerText = mainNewBalance;
 }
 
 })
