@@ -1,0 +1,85 @@
+<!DOCTYPE html data-theme='cupcake'>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-7xl mx-auto">
+
+  <header class="relative">
+    <!-- Navbar start -->
+    <div class="fixed top-0 left-0 right-0 backdrop-blur">
+      <div class="navbar bg-stone-200 mb-14 backdrop-blur">
+        <div class="navbar-start">
+          <div>
+            <button class="bg-lime-400 px-6 py-2 rounded font-bold hover:bg-lime-500 ease-in duration-200">Blog</button>
+          </div>
+        </div>
+        <div class="navbar-center gap-3 items-center justify-center text-xl font-semibold">
+          <div>
+            <img width="30px" src="./assets/logo.png" alt="">
+          </div>
+          <div>
+            <h3>Donate Bangladesh</h3>
+          </div>
+        </div>
+        <div class="navbar-end gap-2 text-lg font-semibold">
+          <img src="./assets/coin.png" alt="">
+          <span id="my-balance">5000 BDT</span>
+        </div>
+      </div>
+
+      <!-- Donation and History Btn -->
+      <div class="flex justify-center gap-3 mb-10">
+        <button id="btn-donation"
+          class="text-slate-600 font-semibold border-solid border-2 border-gray-200 px-6 py-3 hover:bg-lime-400 active:bg-lime-600 focus:bg-lime-900 focus:text-white ease-in duration-200">Donation</button>
+        <button
+          class="text-slate-600 font-semibold border-solid border-2 border-gray-200 px-6 py-3 hover:bg-lime-400 focus:bg-lime-900 focus:text-white ease-in duration-200">History</button>
+      </div>
+    </div>
+    <!-- Navbar enc -->
+  </header>
+
+  <main>
+
+    <!-- Donation Cards -->
+    <section class="max-w-6xl mx-auto mt-60">
+      <div
+        class="flex gap-10 flex-col md:flex-row mx-auto items-center border-solid border-2 p-4 border-gray-200 rounded-xl">
+
+        <img src="./assets/noakhali.png" alt="">
+
+        <div class="text-justify flex flex-col">
+          <div class="flex items-center gap-2 bg-slate-300 px-5 py-2 w-fit mb-3">
+            <img src="./assets/coin.png" alt="">
+            <span id="donate-balance" class="text-lg font-bold">0 BDT</span>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h4>
+          <p class="mb-4">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+            donation will
+            help
+            provide
+            essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+            difference.
+            Please
+            join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+          <input id="addMoney" class="py-3 px-2 border-solid border-2 border-gray-200 rounded mb-4" type="number"
+            placeholder="Write Your Amount">
+          <button id="btn-donateNow" class="bg-lime-400 py-3 rounded font-semibold">Donate Now</button>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+  <!-- Js Link -->
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
