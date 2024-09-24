@@ -9,12 +9,17 @@ donateNow.addEventListener('click', function(event){
 event.preventDefault();
 const addMoneyValue = addMoney.value;
 const addMoneyInNumber = parseFloat(addMoneyValue);
-if(addMoneyValue <= 0){
+
+const balance = donateBalance.innerText;
+const balanceInNumber = parseFloat(balance);
+
+
+if(addMoneyInNumber <= 0){
   alert('Please input a valid amount')
 }
 else{
-  console.log('okay done');
-  
+  const newBalance = balanceInNumber + addMoneyInNumber;
+  donateBalance.innerText = newBalance;
 }
 
 })
